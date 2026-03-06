@@ -1,0 +1,47 @@
+{
+  "name": "@strata-ui/cli",
+  "version": "1.0.0",
+  "description": "CLI for Strata UI - A collection of re-usable components for React Native",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "strata": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts --clean",
+    "dev": "tsup src/index.ts --format cjs --watch --dts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react-native",
+    "nativewind",
+    "ui",
+    "components",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "prompts": "^2.4.2",
+    "fs-extra": "^11.2.0",
+    "execa": "^5.1.1",
+    "node-fetch": "^2.7.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.0",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
