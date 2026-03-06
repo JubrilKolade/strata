@@ -1,0 +1,335 @@
+{
+  "$schema": "https://strata-ui.dev/schema.json",
+  "components": {
+    "button": {
+      "name": "Button",
+      "description": "Customizable button with variants and loading states",
+      "files": [
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "button",
+        "pressable"
+      ]
+    },
+    "card": {
+      "name": "Card",
+      "description": "Card container with header, content, and footer",
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "layout",
+      "tags": [
+        "card",
+        "container"
+      ]
+    },
+    "input": {
+      "name": "Input",
+      "description": "Text input with error states",
+      "files": [
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "input",
+        "form"
+      ]
+    },
+    "checkbox": {
+      "name": "Checkbox",
+      "description": "Checkbox with controlled and uncontrolled modes",
+      "files": [
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "checkbox",
+        "form"
+      ]
+    },
+    "switch": {
+      "name": "Switch",
+      "description": "Toggle switch component",
+      "files": [
+        {
+          "path": "src/components/ui/switch.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "switch",
+        "toggle"
+      ]
+    },
+    "select": {
+      "name": "Select",
+      "description": "Dropdown select component",
+      "files": [
+        {
+          "path": "src/components/ui/select.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "select",
+        "dropdown"
+      ]
+    },
+    "textarea": {
+      "name": "Textarea",
+      "description": "Multi-line text input",
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "textarea",
+        "input"
+      ]
+    },
+    "dialog": {
+      "name": "Dialog",
+      "description": "Modal dialog component",
+      "files": [
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "overlay",
+      "tags": [
+        "dialog",
+        "modal"
+      ]
+    },
+    "alert": {
+      "name": "Alert",
+      "description": "Alert message component",
+      "files": [
+        {
+          "path": "src/components/ui/alert.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "feedback",
+      "tags": [
+        "alert",
+        "message"
+      ]
+    },
+    "toast": {
+      "name": "Toast",
+      "description": "Toast notification system",
+      "files": [
+        {
+          "path": "src/components/ui/toast.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "feedback",
+      "tags": [
+        "toast",
+        "notification"
+      ]
+    },
+    "progress": {
+      "name": "Progress",
+      "description": "Progress bar component",
+      "files": [
+        {
+          "path": "src/components/ui/progress.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "feedback",
+      "tags": [
+        "progress",
+        "loader"
+      ]
+    },
+    "skeleton": {
+      "name": "Skeleton",
+      "description": "Loading skeleton placeholder",
+      "files": [
+        {
+          "path": "src/components/ui/skeleton.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "feedback",
+      "tags": [
+        "skeleton",
+        "loading"
+      ]
+    },
+    "tabs": {
+      "name": "Tabs",
+      "description": "Tabbed interface component",
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "navigation",
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    "accordion": {
+      "name": "Accordion",
+      "description": "Collapsible accordion component",
+      "files": [
+        {
+          "path": "src/components/ui/accordion.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "layout",
+      "tags": [
+        "accordion",
+        "collapse"
+      ]
+    },
+    "slider": {
+      "name": "Slider",
+      "description": "Slider input component",
+      "files": [
+        {
+          "path": "src/components/ui/slider.tsx",
+          "type": "component"
+        }
+      ],
+      "dependencies": [
+        "react-native"
+      ],
+      "devDependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "category": "form",
+      "tags": [
+        "slider",
+        "range"
+      ]
+    }
+  }
+}
