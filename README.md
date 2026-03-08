@@ -1,198 +1,112 @@
-# React Native UI
+# Strata UI
 
-Beautiful, accessible components for React Native built with NativeWind. Copy, paste, and customize to build your apps faster.
+Beautiful, accessible components for **React Native** built with **NativeWind**. Copy, paste, and customize to build your apps faster.
 
-![React Native UI](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![NativeWind](https://img.shields.io/badge/NativeWind-v4-purple)
+![Strata UI](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+![NativeWind](https://img.shields.io/badge/NativeWind-v4-purple?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-black?style=for-the-badge)
 
-## What is React Native UI?
+## What is Strata UI?
 
-React Native UI is a collection of beautifully designed, accessible React Native components built with NativeWind (Tailwind CSS for React Native). It's **not a component library** - it's a collection of re-usable components that you can copy and paste into your apps.
+Strata UI is a collection of beautifully designed, accessible React Native components built with NativeWind (Tailwind CSS for React Native). It's **not a component library** - it's a collection of re-usable components that you can copy and paste into your apps, giving you full control over the code.
 
 **Inspired by [shadcn/ui](https://ui.shadcn.com)**
 
-### Why Copy-Paste?
+### Why Strata UI?
 
-- **You own the code** - Components live in your codebase
-- **Fully customizable** - No need to override complex props
-- **Zero lock-in** - Use what you need, modify as you want
-- **Learn by reading** - See exactly how components work
-- **No version conflicts** - Your dependencies, your rules
-
-## Demo
-
-Try the example app:
-
-```bash
-git clone https://github.com/yourusername/react-native-ui.git
-cd react-native-ui/apps/docs
-npm install
-npm start
-```
+- **Full Control** - Components live in your codebase, not in `node_modules`.
+- **Customizable** - Modify any component to fit your exact design needs.
+- **Accessible** - Built with accessibility best practices in mind.
+- **Modern Stack** - Powered by NativeWind v4 and TypeScript.
+- **Performance** - Zero overhead, only use what you need.
 
 ## Quick Start
 
-### 1. Setup your Expo project
+### 1. Initialize Strata UI
 
 ```bash
-npx create-expo-app my-app
-cd my-app
+npx @strata-ui/cli init
 ```
 
-### 2. Initialize React Native UI
+This will set up your project with NativeWind v4, colors, and core utilities.
+
+### 2. Add components
 
 ```bash
-npx @react-native-ui/cli init
+npx @strata-ui/cli add button
+npx @strata-ui/cli add card avatar
 ```
 
-This will:
-- Install NativeWind and dependencies  
-- Create tailwind.config.js
-- Setup utils and helpers
-- Configure your project
-
-### 3. Add components
-
-```bash
-npx @react-native-ui/cli add button
-npx @react-native-ui/cli add card input
-```
-
-### 4. Use them in your app
+### 3. Use them in your app
 
 ```tsx
 import { Button } from '@/components/ui/button';
+import { Text } from '@/components/ui/text';
 
-export default function Screen() {
+export default function App() {
   return (
-    <Button onPress={() => alert('Hello!')}>
-      Click Me
+    <Button onPress={() => console.log('Pressed')}>
+      <Text>Get Started</Text>
     </Button>
   );
 }
 ```
 
-## Components
+## UI Components
 
-All components are built with:
-- ✅ **Accessibility** - Proper ARIA attributes, screen reader support
-- ✅ **TypeScript** - Fully typed with exported interfaces  
-- ✅ **Variants** - Multiple styles out of the box
-- ✅ **Customizable** - Easy to modify via className
-- ✅ **NativeWind** - Tailwind CSS styling
-- ✅ **Dark mode ready** - Theme system included
+We provide a growing set of components that follow a consistent design system.
 
-### Available Components
+### Form
+- [x] **Button** - Highly customizable pressable with variants
+- [x] **Input** - Styled text input with focus states
+- [x] **Checkbox** - Standard checkbox input
+- [x] **Select** - Dropdown selector for options
+- [x] **Slider** - Range selection slider
+- [x] **Switch** - Toggle switch component
+- [x] **Textarea** - Multi-line text input
+- [x] **Label** - Accessible label for form fields
 
-#### Layout
-- [x] Card - Flexible card container with header, content, footer
-- [x] Separator - Horizontal/vertical dividers
-- [ ] Sheet - Bottom sheet and modal
-- [ ] Tabs - Tabbed interface
+### Layout & Display
+- [x] **Card** - Flexible container for content
+- [x] **Accordion** - Collapsible content sections
+- [x] **Tabs** - Navigational tab system
+- [x] **Avatar** - Profile images and initials
+- [x] **Badge** - Visual labels and status tags
+- [x] **Separator** - Minimal dividers
+- [x] **Skeleton** - Loading placeholders
+- [x] **Text** - Core typography system
 
-#### Form
-- [x] Button - Pressable with variants and states
-- [x] Input - Text input with validation
-- [ ] Checkbox - Checkboxes and switches
-- [ ] Select - Dropdown selector
-- [ ] Radio Group - Radio button group
-- [ ] Switch - Toggle switch
-
-#### Display  
-- [x] Text - Typography with presets
-- [x] Badge - Labels and tags
-- [x] Avatar - User avatars
-- [ ] Skeleton - Loading placeholders
-- [ ] Progress - Progress indicators
-
-#### Feedback
-- [ ] Toast - Toast notifications
-- [ ] Alert - Alert messages
-- [ ] Dialog - Modal dialogs
-
-## Documentation
-
-- [Getting Started](./docs/getting-started.md)
-- [Installation](./docs/installation.md)
-- [CLI Usage](./docs/cli.md)
-- [Theming](./docs/theming.md)
-- [Components](./docs/components/)
-- [Examples](./docs/examples/)
+### Overlay & Feedback
+- [x] **Dialog** - Modal overlay component
+- [x] **AlertDialog** - Confirmation and alert modals
+- [x] **Toast** - Floating notifications
+- [x] **Progress** - Progress tracking indicators
+- [x] **ContextMenu** - Contextual menus
 
 ## Tech Stack
 
-- [React Native](https://reactnative.dev/) - Mobile framework
-- [Expo](https://expo.dev/) - Development platform  
-- [NativeWind v4](https://www.nativewind.dev/) - Tailwind for React Native
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Expo Router](https://docs.expo.dev/router/introduction/) - File-based routing
+- **React Native** - Foundation for cross-platform apps
+- **NativeWind v4** - Styling with Tailwind CSS
+- **TypeScript** - First-class type descriptions
+- **Zustand** - For state-heavy components (Toast)
+- **Lucide Icons** - Modern, consistent iconography
 
-## Community
+## Community & Contributing
 
-- [Discord](https://discord.gg/react-native-ui) - Join our community
-- [Twitter](https://twitter.com/reactnativeui) - Follow for updates
-- [GitHub Discussions](https://github.com/yourusername/react-native-ui/discussions) - Ask questions
+We welcome all contributions! Whether it's a bug report, a feature request, or a new component.
 
-## Contributing
+- [GitHub Repository](https://github.com/JubrilKolade/strata)
+- [Issue Tracker](https://github.com/JubrilKolade/strata/issues)
+- [Contributing Guide](./CONTRIBUTING.md)
 
-We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md).
+## Credits
 
-### Development Setup
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/strata-ui.git
-cd strata-ui
-
-# Install dependencies
-npm install
-
-# Start the docs app
-npm run dev
-
-# Build the CLI
-cd packages/cli
-npm run build
-```
-
-## Roadmap
-
-### v1.0 (Current)
-- [x] Core components (Button, Card, Input, etc.)
-- [x] CLI tool
-- [x] Documentation app
-- [x] TypeScript support
-
-### v1.1
-- [ ] Form components (Checkbox, Radio, Select)
-- [ ] Bottom Sheet
-- [ ] Toast notifications
-- [ ] Dark mode
-
-### v1.2  
-- [ ] Animation support (Reanimated)
-- [ ] More complex components
-- [ ] Component playground
-- [ ] Figma kit
-
-### v2.0
-- [ ] Form validation library
-- [ ] Advanced animations
-- [ ] Premium templates
-- [ ] VS Code extension
-
-## Inspiration
-
-This project is heavily inspired by:
-- [shadcn/ui](https://ui.shadcn.com) - For the copy-paste philosophy
-- [Radix UI](https://www.radix-ui.com/) - For accessibility patterns
-- [Tailwind CSS](https://tailwindcss.com) - For the styling approach
+- [shadcn/ui](https://ui.shadcn.com) - For the amazing architecture patterns.
+- [NativeWind](https://www.nativewind.dev/) - For making Tailwind available on React Native.
 
 ## License
 
-MIT © [Your Name](https://github.com/yourusername)
+Licensed under the [MIT License](./LICENSE).
 
----
-
-Built with ❤️ for the React Native community
+Built with ❤️ by [Jubril Kolade](https://github.com/JubrilKolade)
