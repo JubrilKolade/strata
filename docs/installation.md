@@ -13,7 +13,7 @@ Get started with Strata UI in your Expo project.
 The easiest way to get started is with our CLI tool:
 
 \`\`\`bash
-npx @react-native-ui/cli init
+npx @strata-ui/cli init
 \`\`\`
 
 This will:
@@ -150,7 +150,7 @@ Create `components.json`:
 
 \`\`\`json
 {
-  "$schema": "https://react-native-ui.dev/schema.json",
+  "$schema": "https://strata-ui.dev/schema.json",
   "style": "default",
   "tailwind": {
     "config": "tailwind.config.js",
@@ -210,6 +210,6 @@ Make sure your `tsconfig.json` has the correct path aliases and restart your Typ
 
 ## Getting Help
 
-- [Discord Community](https://discord.gg/react-native-ui)
-- [GitHub Discussions](https://github.com/yourusername/react-native-ui/discussions)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/react-native-ui)
+- [Discord Community](https://discord.gg/strata-ui)
+- [GitHub Discussions](https://github.com/JubrilKolade/strata/discussions)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/strata-ui)

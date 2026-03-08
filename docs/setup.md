@@ -7,8 +7,8 @@ Complete guide to setting up React Native UI for development and production.
 If you just want to use React Native UI in your project:
 
 ```bash
-npx @react-native-ui/cli init
-npx @react-native-ui/cli add button card
+npx @strata-ui/cli init
+npx @strata-ui/cli add button card
 ```
 
 See [Installation Guide](./installation.md) for details.
@@ -30,8 +30,8 @@ Setting up the project for development.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/react-native-ui.git
-   cd react-native-ui
+   git clone https://github.com/JubrilKolade/strata.git
+   cd strata
    ```
 
 2. **Install dependencies**
@@ -102,7 +102,7 @@ Setting up the project for development.
    ```bash
    # In another terminal
    cd /path/to/test-project
-   rnui add button
+   strata add button
    ```
 
 ### Project Structure
@@ -114,14 +114,9 @@ react-native-ui/
 │       ├── ci.yml          # Tests and linting
 │       └── publish.yml     # npm publishing
 │
-├── apps/
-│   └── docs/               # Expo documentation app
-│       ├── app/            # Expo Router pages
-│       ├── components/     # Doc-specific components
-│       └── package.json
-│
+├── apps/                   # Example and playground apps
 ├── packages/
-│   └── cli/                # @react-native-ui/cli
+│   └── cli/                # @strata-ui/cli
 │       ├── src/
 │       │   ├── commands/   # CLI commands
 │       │   └── utils/      # Utilities
@@ -185,7 +180,7 @@ Additional setup for project maintainers.
 
    Ask existing maintainer to run:
    ```bash
-   npm owner add <your-username> @react-native-ui/cli
+   npm owner add <your-username> @strata-ui/cli
    ```
 
 2. **Login to npm**
@@ -348,7 +343,7 @@ Registry is just JSON files in the repository.
 ### CLI Usage
 
 Track via npm stats:
-- https://npmjs.com/package/@react-native-ui/cli
+- https://npmjs.com/package/@strata-ui/cli
 
 ### Documentation
 
@@ -360,5 +355,5 @@ Use Vercel/Netlify analytics:
 ## Next Steps
 
 - Read [Contributing Guide](../CONTRIBUTING.md)
-- Join [Discord](https://discord.gg/react-native-ui)
-- Check [Open Issues](https://github.com/yourusername/react-native-ui/issues)
+- Join [Discord](https://discord.gg/strata-ui)
+- Check [Open Issues](https://github.com/JubrilKolade/strata/issues)

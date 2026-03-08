@@ -115,7 +115,7 @@ export async function init() {
 
     console.log('\n' + chalk.cyan('Next steps:'));
     console.log('  1. Import global.css in your app');
-    console.log('  2. Add components: npx rnui add button');
+    console.log('  2. Add components: npx strata add button');
   } catch (error) {
     spinner.fail('Failed to initialize');
     console.error(error);

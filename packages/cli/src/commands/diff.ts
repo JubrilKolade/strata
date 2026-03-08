@@ -6,7 +6,7 @@
 // import { getConfig } from '../utils/get-config';
 // import { logger } from '../utils/logger';
 
-// const REGISTRY_URL = 'https://raw.githubusercontent.com/yourusername/react-native-ui/main';
+// const REGISTRY_URL = 'https://raw.githubusercontent.com/JubrilKolade/strata/main';
 
 // async function fetchRemoteComponent(fileName: string): Promise<string> {
 //   const url = \`\${REGISTRY_URL}/src/components/ui/\${fileName}\`;
@@ -102,7 +102,7 @@
 //         logger.info('');
 //         console.log(generateDiff(localContent, remoteContent));
 //         logger.info('');
-//         logger.info(\`To update: npx rnui add \${component} --overwrite\`);
+//         logger.info(\`To update: npx strata add \${component} --overwrite\`);
 //       }
 //     }
 
@@ -121,8 +121,8 @@
 //           logger.info(\`  - \${componentName}\`);
 //         });
 //         logger.info('');
-//         logger.info('Run "npx rnui diff <component>" to see changes');
-//         logger.info('Run "npx rnui add <component> --overwrite" to update');
+//         logger.info('Run "npx strata diff <component>" to see changes');
+//         logger.info('Run "npx strata add <component> --overwrite" to update');
 //       }
 //       logger.info('');
 //     }

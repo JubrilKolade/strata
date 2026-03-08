@@ -7,7 +7,7 @@ How to deploy and publish React Native UI.
 ### Prerequisites
 
 - npm account (https://www.npmjs.com/)
-- Maintainer access to @react-native-ui org
+- Maintainer access to @strata-ui org
 - npm authentication token
 
 ### Manual Publishing
@@ -31,7 +31,7 @@ How to deploy and publish React Native UI.
    npm link
    
    # In a test project
-   rnui init
+   strata init
    ```
 
 4. **Publish**
@@ -75,8 +75,8 @@ The component registry needs to be publicly accessible.
 Use GitHub raw URLs:
 
 ```
-https://raw.githubusercontent.com/yourusername/react-native-ui/main/registry/components.json
-https://raw.githubusercontent.com/yourusername/react-native-ui/main/src/components/ui/button.tsx
+https://raw.githubusercontent.com/JubrilKolade/strata/main/registry/components.json
+https://raw.githubusercontent.com/JubrilKolade/strata/main/src/components/ui/button.tsx
 ```
 
 **Pros:**
@@ -94,7 +94,7 @@ https://raw.githubusercontent.com/yourusername/react-native-ui/main/src/componen
 Use jsDelivr for better caching:
 
 ```
-https://cdn.jsdelivr.net/gh/yourusername/react-native-ui@main/registry/components.json
+https://cdn.jsdelivr.net/gh/JubrilKolade/strata@main/registry/components.json
 ```
 
 **Pros:**
@@ -209,7 +209,7 @@ If you added/removed props, update registry:
 Users can check for updates:
 
 ```bash
-npx @react-native-ui/cli diff
+npx @strata-ui/cli diff
 ```
 
 ## Versioning Strategy
@@ -310,7 +310,7 @@ Keep registry in git - it's your source of truth.
 If you need to unpublish (not recommended):
 
 ```bash
-npm unpublish @react-native-ui/cli@1.0.0
+npm unpublish @strata-ui/cli@1.0.0
 ```
 
 Better: publish a new patch version with the fix.
@@ -331,7 +331,7 @@ npm audit fix
 Limit npm publishing to trusted maintainers:
 
 ```bash
-npm owner add <username> @react-native-ui/cli
+npm owner add <username> @strata-ui/cli
 ```
 
 ## Support
