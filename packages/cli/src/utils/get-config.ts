@@ -31,7 +31,7 @@ export async function getConfig(cwd: string): Promise<Config | null> {
     return configSchema.parse(configJson);
   } catch (error) {
     throw new Error(
-      \`Invalid components.json: \${error instanceof Error ? error.message : 'Unknown error'}\`
+      `Invalid components.json: ${error instanceof Error ? error.message : 'Unknown error'}`
     );
   }
 }

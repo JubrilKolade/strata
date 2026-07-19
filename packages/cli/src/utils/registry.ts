@@ -25,7 +25,7 @@ export async function getRegistryComponents(): Promise<Registry> {
   }
 
   try {
-    const response = await fetch(\`\${REGISTRY_URL}/components.json\`);
+    const response = await fetch(`${REGISTRY_URL}/components.json`);
     
     if (!response.ok) {
       throw new Error('Failed to fetch component registry');
@@ -34,10 +34,10 @@ export async function getRegistryComponents(): Promise<Registry> {
     const data = await response.json();
     cachedRegistry = (data as any).components || {};
     
-    return cachedRegistry;
+    return cachedRegistry!;
   } catch (error) {
     throw new Error(
-      \`Failed to fetch registry: \${error instanceof Error ? error.message : 'Unknown error'}\`
+      `Failed to fetch registry: ${error instanceof Error ? error.message : 'Unknown error'}`
     );
   }
 }
